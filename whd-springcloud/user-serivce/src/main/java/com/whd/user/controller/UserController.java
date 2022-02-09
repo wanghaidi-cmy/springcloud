@@ -19,7 +19,7 @@ public class UserController {
 
     @RequestMapping("/{id}")
     public User queryById(@PathVariable("id") Long id) {
-      /*  try {
+        /*try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();

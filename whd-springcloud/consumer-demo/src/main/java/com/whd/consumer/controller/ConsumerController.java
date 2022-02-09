@@ -44,6 +44,9 @@ public class ConsumerController {
         /*List<ServiceInstance> serviceInstances = discoveryClient.getInstances("user-service");
         ServiceInstance serviceInstance = serviceInstances.get(0);
         String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/user/" + id;*/
+        if (id == 1) {
+            throw new RuntimeException("网络繁忙！");
+        }
         String url = "http://user-service/user/" + id;
         return restTemplate.getForObject(url, String.class);
     }
