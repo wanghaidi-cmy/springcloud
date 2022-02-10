@@ -13,6 +13,7 @@
         <module>consumer-demo</module>
         <module>eureka-server</module>
         <module>whd-gateway</module>
+        <module>confid-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
