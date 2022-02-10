@@ -10,5 +10,6 @@
     <file url="file://$PROJECT_DIR$/whd-springcloud/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/whd-springcloud/user-serivce/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/whd-springcloud/user-serivce/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/whd-springcloud/whd-gateway/src/main/java" charset="UTF-8" />
   </component>
 </project>

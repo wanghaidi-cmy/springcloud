@@ -12,6 +12,7 @@
         <module>user-serivce</module>
         <module>consumer-demo</module>
         <module>eureka-server</module>
+        <module>whd-gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
