@@ -25,14 +25,37 @@ spring:
             - StripPrefix=1
             #配置自定义局部过滤器
             - MyParam=name
+
       default-filters:
         #默认过滤器，对于所有路由都生效
         - AddResponseHeader=X-Response-Foo, Bar
         - AddResponseHeader=whd-myname, whd
-
+      #跨域配置
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            #allowedOrigins: * # 这种写法或者下面的都可以，*表示全部
+            allowedOrigins:
+              - "http://docs.spring.io"
+            allowedMethods:
+              - GET
+#注册中心配置
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10086/eureka
   instance:
     prefer-ip-address: true
+#熔断配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 2000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 0

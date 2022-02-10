@@ -11,6 +11,7 @@ import java.util.List;
 /**
  * @author wanghaidi
  * @create 2022-02-10 16:12
+ * 编写局部过滤器
  */
 @Component
 public class MyParamGatewayFilterFactory extends AbstractGatewayFilterFactory<MyParamGatewayFilterFactory.Config> {
