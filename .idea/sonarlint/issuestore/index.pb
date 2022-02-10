@@ -11,8 +11,6 @@ S
 #whd-springcloud/whd-springcloud.iml,7\7\779b130108457234657a069ff8d6aa33bd871047
 T
 $whd-springcloud/user-serivce/pom.xml,3\8\3803e6eda03f1b6f2f4a213c956cd69eb8e7ef20
-G
-whd-springcloud/pom.xml,0\b\0b4bb42a5c2d30277360eec831ee6c137258f6ce
 l
 <http-demo/src/main/java/com/itheima/HttpDemoApplication.java,9\f\9f79ea23d025d727d7ab921152ee8aed9d6f10cf
 b

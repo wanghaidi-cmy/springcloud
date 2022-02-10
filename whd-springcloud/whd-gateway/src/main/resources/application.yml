@@ -23,6 +23,8 @@ spring:
             #- PrefixPath=/user
             #去除前缀 1表示过滤一个路径，2表示过滤两个路径
             - StripPrefix=1
+            #配置自定义局部过滤器
+            - MyParam=name
       default-filters:
         #默认过滤器，对于所有路由都生效
         - AddResponseHeader=X-Response-Foo, Bar
